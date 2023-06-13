@@ -200,9 +200,13 @@ nav a:active {
     margin-top: 50px;
 }
 
-.main-visual audio {
+.main-visual video {
     width: 80%;
 }
+
+/* .main-visual audio {
+    width: 80%;
+} */
 
 .main-visual-inner {
     animation: 1s fadeIn;
