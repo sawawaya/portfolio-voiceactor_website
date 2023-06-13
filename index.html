@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="style.css">
+    <title>田澤未野Portfolio</title>
+</head>
+<body>
+    <header>
+        <img src="images/img_header.png">
+
+        <div class="pc-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="">SAMPLE</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sp-menu">
+            <i class="fa-solid fa-bars" id="menu-open"></i>
+        </div>
+
+        <div class="overlay">
+            <i class="fa-solid fa-xmark" id="menu-close"></i>
+            <nav>
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="">SAMPLE</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <div class="container">
+
+    <main class="main-visual">
+        <div class="main-visual-inner">
+            <h2>宅録ナレーター・声優</h2>
+            <h1>田澤未野</h1>
+            <img src="images/img_tazawa.jpg">
+            <p class="profile">
+                温かみのあるハスキーな声質を活かしたナレーションをお届けします。
+                日本文学、IT、着物の基礎的な知識がありますので、そのような内容のナレーションもぜひお任せください。
+                頭の中の「こうしたい」を、ぜひ一緒に形にしましょう。
+            </p>
+            
+            <button class="profile-appear-btn" id="profile-appear-btn">……もっと見る</button>
+            <button class="profile-disappear-btn profile-appear-hidden" id="profile-disappear-btn">……閉じる</button>
+        </div>
+
+        <h2>ボイスサンプル</h2>
+        <audio controls src="images/audio_voice.mp3"></audio>
+        <!-- <video controls playsinline src="images/mov_voicesample_1.mp4" poster="images/img_mov1thumbnail.png"></video> -->
+    </main>
+    
+    <section class="point-area">
+        <h2>POINT</h2>
+        <div class="point-area-inner">
+            <ul class="point1">
+                <li>
+                    <p>1</p>
+                    <p>元声優事務所所属のクオリティ</p>
+                </li>
+            </ul>
+            <ul class="point2">
+                <li>
+                    <p>2</p>
+                    <p>文字数単位の安心な料金設定</p>
+                </li>
+            </ul>
+            <ul class="point3">
+                <li>
+                    <p>3</p>
+                    <p>高品質なノイズ除去が無料</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="faq-area">
+        <h2>Q&A</h2>
+        <div class="faq-inner">
+            <dl>
+                <div>
+                    <dt>原稿が未完成の状態で依頼はできますか？</dt>
+                    <dd>文字数単位でのお見積りとなりますので、原稿完成後にご依頼ください。</dd>
+                </div>
+            </dl>
+            <dl>
+                <div>
+                    <dt>キャラクターボイスの依頼は可能ですか？</dt>
+                    <dd>可能です。ただし、過度に不安を煽って商品購入を促す内容等はお受けできません。</dd>
+                </div>
+            </dl>
+            <dl>
+                <div>
+                    <dt>NGな依頼はありますか？</dt>
+                    <dd>暴力性の強いもの、著作権侵害の可能性のあるもの等、お断りする場合があります。</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-form">
+        <form action="" method="post">
+            <fieldset>
+            <legend>お問合せ</legend>
+                <p>    
+                    <label for="name">name  </label>
+                    <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                </p>
+                <p>
+                    <label for="mail">email  </label>
+                    <input type="email" id="mail" name="mail" placeholder="○○○○○@tazawa.com" required>
+                </p>
+                <textarea name="text-content" id="text-content" placeholder="お問合せ内容" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <input type="submit" value="送 信" id="submit-btn">
+        </form>
+    </section>
+    
+    </div>
+
+    <footer>
+        <img src="images/img_footer.png">        
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
